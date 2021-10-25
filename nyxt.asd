@@ -169,7 +169,6 @@
                (:file "macro-edit-mode")
                (:file "status")
                ;; Depends on everything else:
-               (:file "web-extensions")
                (:file "about")
                (:file "start")
                (:file "tutorial")
@@ -283,7 +282,9 @@
                cl-webkit2)
   :pathname "source/"
   :serial t
-  :components ((:file "renderers/gtk-clipboard")
+  :components ((:file "web-extensions")
+               (:file "web-extensions-callbacks")
+               (:file "renderers/gtk-clipboard")
                (:file "renderers/gtk")))
 
 (defsystem "nyxt/gi-gtk"
