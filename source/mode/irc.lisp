@@ -3,7 +3,9 @@
 
 (uiop:define-package :nyxt/irc-mode
   (:use :common-lisp :nyxt)
+  (:export :irc-mode)
   (:documentation "An IRC client within Nyxt."))
+
 (in-package :nyxt/irc-mode)
 
 (define-mode irc-mode ()
